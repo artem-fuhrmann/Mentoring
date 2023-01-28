@@ -1,0 +1,14 @@
+
+
+<ng-template #tabTemplate>
+  
+  <ng-container *ngIf="contentTemplate">
+    <ng-container *ngTemplateOutlet="contentTemplate"></ng-container>
+  </ng-container>
+
+  <ng-container *ngIf="!contentTemplate">
+    <ng-content></ng-content>
+  </ng-container>
+
+</ng-template>
+
